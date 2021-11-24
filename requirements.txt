@@ -2,4 +2,5 @@ scikit-learn
 tox
 black
 isort
+coveralls
 -e .
