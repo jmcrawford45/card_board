@@ -3,4 +3,7 @@ tox
 black
 isort
 coveralls
+opencv-python
+pytesseract
+pillow
 -e .
