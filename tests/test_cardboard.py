@@ -1,4 +1,6 @@
 import card_board
 
-def test_add():
-	assert card_board.add(2,2) == 4
+import pkg_resources
+
+def test_card_from_image():
+	assert card_board.card_from_image(pkg_resources.resource_filename(__name__, 'dark_magician.jpg')) == 'test'
