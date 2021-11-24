@@ -9,6 +9,8 @@ jobs:
     strategy:
       matrix:
         python: ["3.10"]
+    before_install:
+      - sudo apt-get install -y tesseract-ocr
 
     steps:
       - uses: actions/checkout@v2
