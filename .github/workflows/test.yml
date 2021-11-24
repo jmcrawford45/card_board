@@ -10,7 +10,7 @@ jobs:
       matrix:
         python: ["3.10"]
     before_install:
-      - sudo apt-get install -y tesseract-ocr
+     
 
     steps:
       - uses: actions/checkout@v2
@@ -18,6 +18,8 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: ${{ matrix.python }}
+      - name: Install tesseract
+        run: sudo apt-get install -y tesseract-ocr
       - name: Install Tox and any other packages
         run: pip install tox
       - name: Run Tox
