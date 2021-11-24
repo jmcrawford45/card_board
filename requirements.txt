@@ -6,4 +6,5 @@ coveralls
 opencv-python
 pytesseract
 pillow
+pre-commit
 -e .
